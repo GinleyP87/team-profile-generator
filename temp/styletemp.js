@@ -15,6 +15,7 @@ header {
     top: 0;
     width: 100%;
     text-align: center;
+}
 
 h1 {
     font-family: Helvetica, sans-serif;

@@ -140,7 +140,7 @@ function addEngineer() {
     ])
 
         .then(function (data) {
-            const idNum = workTeamArray.length + 1
+            const idNum = workTeamArray.length
             const employeeName = data.employeeName
             const email = data.email
             const ghName = data.ghName
@@ -181,7 +181,7 @@ function addIntern() {
 
         .then(function (data) {
             const employeeName = data.employeeName
-            const idNum = workTeamArray.length + 1
+            const idNum = workTeamArray.length
             const email = data.email
             const schoolName = data.schoolName
             const newEmployee = new Intern(idNum, employeeName, email, schoolName)
@@ -215,7 +215,7 @@ function generateTeam() {
     `
     skeletonArray.push(upperSkeleton);
 
-    for (let i = 1; i < workTeamArray.length; i++) {
+    for (let i = 1; i < workTeamArray.length; i++){
         let object = `
         <div class="employee-card">
             <div class="team-header">

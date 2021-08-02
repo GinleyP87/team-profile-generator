@@ -18,7 +18,7 @@ Go to my GitHub page listed below and download the zip file or clone the files f
 
 ## Usage
 
-![readme-example](./assets/images/readme-example.gif)
+![readme-example](assets/images/team-profile-gen.gif)
 
 ## License
 n/a

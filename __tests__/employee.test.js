@@ -6,7 +6,7 @@ test("This should get the Employee object", () => {
     expect(typeof(example)).toBe("object");
 });
 
-test("This should get the id with the constructor function", () => {
+test("This should get the idNum with the constructor function", () => {
     const ranVal = 4;
     const example = new Employee(ranVal);
 
@@ -27,28 +27,28 @@ test("This should get the email address through the constructor argument", () =>
     expect(example.email).toBe(email);
 });
 
-test("This should get the id from getId function", () => {
+test("This should get the idNum from acquireIdNum function", () => {
     const ranVal = 4;
     const example = new Employee(ranVal);
 
     expect(example.acquireId()).toBe(ranVal);
 });
 
-test("This should get name with getName function", () => {
+test("This should get name with acquireName function", () => {
     const employeeName = "Barry Allen";
     const example = new Employee(4, employeeName);
 
     expect(example.acquireName()).toBe(employeeName);
 });
 
-test("This should get the email address from getEmail function", () => {
+test("This should get the email address from acquireEmail function", () => {
     const email = "test@test.com";
     const example = new Employee(4, "Barry Allen", email);
 
     expect(example.acquireEmail()).toBe(email);
 });
 
-test("This getJobTitle function should display \"Employee\"", () => {
+test("This acquireJobTitle function should display \"Employee\"", () => {
     const jobTitle = "Employee";
     const example = new Employee(4, "Barry Allen", "example@fake.com");
 
